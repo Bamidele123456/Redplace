@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Donations</title>
+    <script defer src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <nav>
+        <a class="logo-link" href="index.html"><img src="Images/logo.jpg" alt=""></a>
+        <ul class="donate-list">
+            <li data-aos="fade-up" data-aos-duration="600"><a href="index.html">Our Works</a></li>
+            <li data-aos="fade-up" data-aos-duration="200"><a href="index.html">About us</a></li>
+            <li data-aos="fade-up" data-aos-duration="600"><a href="index.html">Our Team</a></li>
+            <li data-aos="fade-up" data-aos-duration="400"><a href="index.html">Contact Us</a></li>
+            <a class="donate-btn btn-donate" href="donate.html">Donate</a>
+        </ul>
+        <a class="donate-btn" href="donate.html">Donate</a>
+        <div class="menu-icon"></div>
+    </nav>
+
+
+    <section class="donate">
+        <h1>DONATE NOW</h1>
+        <h2>Your contributions are impactful</h2>
+        <div class="donate-container">
+            <div class="donate-left">
+                <p>The solutions are within reach. Each and every donation to RedpaceF helps change the world.</p>
+                <div class="donate-left-box">
+                <span class="once">One-Time</span>
+                <p>Choose a one-time amount</p>
+                <div class="payments">
+                    <div class="buttons">
+                    <button onclick="updateDonateAmount(50)">$50</button>
+                    <button onclick="updateDonateAmount(100)">$100</button>
+                    <button onclick="updateDonateAmount(150)">$150</button>
+                    <button onclick="updateDonateAmount(200)">$200</button>
+                </div>
+                    <input class="input" type="text" placeholder="If you wish to donate more, please enter the amount">
+                    <button class="submit" id="donateButton">Donate</button>
+                </div>
+                </div>
+            </div>
+            <div class="donate-right"><img src="Images/IMG-20231026-WA0036.jpg" alt=""></div>
+        </div>
+    </section>
+    <script>
+    
+    function updateDonateAmount(amount) {
+        document.getElementById('donateButton').innerText = `Donate $${amount}`;
+    }
+    </script>
+
+   
+    <section id="contact">
+        <div class="about-left">
+            <div class="img-about" ><img src="Images/logo.jpg" alt=""></div>
+            <p>To assist and restore hope among vulnerable children, aged people and communities that have been affected by poverty, abuse and natural climate.</p>
+        </div>
+        <div class="about-mid">
+            <div class="nav">
+            <div class="nav-left">
+                <a href="index.html"><p>About us</p></a>
+                <a href="donate.html"><p>Make a Donation</p></a>
+            </div>
+            <div class="nav-right">
+                <a href="index.html"><p>Our Work</p></a>
+                <a href="index.html"><p>Our Team</p></a>
+            </div>
+        </div>
+            <div class="socials">
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-twitter' ></i>
+                <i class='bx bxl-instagram' ></i>
+                <i class='bx bxl-youtube' ></i>
+            </div>
+        </div>
+        <div class="about-right">
+            <h1>Stay Up to Date with Redpace</h1>
+            <div class="form">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="form">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="checkbox"><input class="check" type="checkbox">
+            <p>I certify that I am at least 13 years old.</p></div>
+            <button class="about-button">SUBMIT</button>
+        </div>
+    </section>
+
+</body>
+</html>
