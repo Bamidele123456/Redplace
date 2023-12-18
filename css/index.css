@@ -79,7 +79,7 @@ li {
 }
 .donate {
     padding: 160px 7% 100px 7%;
-    background-color: #f0f2f3;
+    background-color: #edf3f8;
 }
 .donate h1 {
     font-size: 1.5rem;
@@ -399,7 +399,7 @@ button:hover {
 .work-container {
     display: flex;
     gap: 50px;
-    padding: 100px 7% 100px 7%;
+    padding: 20px 7% 30px 7%;
     justify-content: space-between;
 }
 .about-lhs {
